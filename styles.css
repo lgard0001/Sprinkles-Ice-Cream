@@ -28,8 +28,8 @@ nav a:hover{
 }
 /* Styles for hero or feature */
 .hero{
-    background-image: url(img/purple_hero.jpg);
-    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(img/purple_hero.jpg);
+    height: 400px;
     background-size:cover;
     background-position: center;
     /* Styles for text and button */
@@ -41,7 +41,8 @@ nav a:hover{
 .flexItem{
         flex-basis: 300px;
         flex-grow: 1;
-        margin: 2px 40px;
+        /* margin: 2px 40px; */
+        margin: 1% 10px;
         background: rgba(255, 255, 255, 0.3);
         padding: 30px;
 }
@@ -49,12 +50,17 @@ nav a:hover{
 .hero h2{
     font-family: "American Typewriter", "Times New Roman", serif;
     color: Cornsilk;
+    font-size: 1.5em;
     justify-content: center;
     position: absolute;
     bottom: 78%;
     right: 10%;
 }
-
+img{
+    display: inline;
+    width: 20%;
+    background-color: Cornsilk;
+}
 h3{
     font-family: "Baskerville", "Times New Roman", serif;
     color: rgb(0, 179, 179);
@@ -116,7 +122,8 @@ main{
 
       img{
           display: inline;
-          width: 30%;
+          width: 20%;
+          background-color: Cornsilk;
       }
 
       .flexItem{
@@ -126,11 +133,10 @@ main{
               /* background: rgba(255, 255, 255, 0.3); */
               /* padding: 30px; */
       }
-      .flexItem:first-child{
-        margin-right: 0;
+      /* .flexItem:first-child{ */
+        /* margin-right: 0; */
 
       }
-
 }
 
 /* large screen styles below */

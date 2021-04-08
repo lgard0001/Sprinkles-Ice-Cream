@@ -60,7 +60,7 @@ h3{
     color: rgb(0, 179, 179);
     padding: 5px;
     text-decoration: underline;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 h4{
@@ -112,8 +112,6 @@ main{
 @media screen and (min-width: 700px) {
       .logo{
          width: 350px;
-         height: 85vh;
-         min-height: 500px;
       }
 
       img{

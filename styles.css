@@ -6,7 +6,15 @@ body{
       margin: 0;
       font-family: Helvetica, sans-serif;
 }
-
+.logo {
+  /* ------ Max width to keep logo image from being larger than intended ------ */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      max-width: 300px;
+      padding-bottom: 8px;
+}
 nav{
     background: rgb(0, 179, 179);
     /* height: 60px; */
@@ -17,7 +25,7 @@ nav{
 nav a{
       text-align: center;
       color: white;
-      font-size: 1.5em;
+      font-size: 1.3em;
       padding: 15px;
       margin: 10px;
       display: inline-block;
@@ -26,6 +34,8 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
+
+
 
 
 /* Styles for hero or feature */
@@ -80,7 +90,7 @@ p{
     font-family:Helvetica, sans-serif;
 }
 
-button{
+/* button{
     position: absolute;
     bottom:5%;
     right:5%;
@@ -90,7 +100,7 @@ button{
     color: black;
     font-size: 1.3em;
     border-radius: 5px;
-}
+} */
 /* STYLES FOR ABOUT HERO */
 .about-hero{
     background-image: url("img/hair_2.jpg");
@@ -117,12 +127,241 @@ main{
     flex-wrap: wrap;
     /* flex-direction: row; */
 }
+
+footer{
+    background-color: rgba(0, 179, 179, 0.6);
+    padding:20px;
+}
+
+footer a{
+    color: white;
+}
+
+footer p{
+    margin: 40px;
+    color: white;
+    font-family: "Baskerville", "Times New Roman", serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+
+/* start sprinkles---------------------------------- */
+.wrapper {
+  background: url(img/Sprinkles_Logo_big.png) no-repeat Cornsilk;
+  background-size: 300px;
+  background-position: center;
+  height: 600px;
+  position: relative;
+}
+.sprinkle {
+  position: absolute;
+  border-radius: 100vh;
+  z-index: 100;
+  animation: bounce-in-sprinkles 0.5s forwards;
+  box-shadow: 1.5vh 1.5vh 0 rgba(0, 0, 0, 0.25);
+}
+/* .sprinkle:hover {
+   background:purple;
+} */
+
+button {
+  /* border-radius: 120px; */
+  margin: 1rem auto;
+  padding-bottom: 8px;
+  border: 0;
+  font-size: 1.2rem;
+  background: transparent;
+  letter-spacing: 0.025em;
+  position: absolute;
+  top: 80%;
+  right: 2%;
+}
+button img{
+  width: 150px;
+
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+.one {
+  transform: rotate(60deg);
+  background-color: #e569a0;
+  top: 30%;
+  left: 90%;
+  animation-delay: 1s;
+}
+
+.two {
+  transform: rotate(-60deg);
+  background-color: #e569a0;
+  top: 63%;
+  left: 67%;
+  animation-delay: 1.5s;
+}
+
+.three {
+  transform: rotate(10deg);
+  background-color: #e569a0;
+  top: 20%;
+  left: 54%;
+  animation-delay: 1.25s;
+}
+
+.four {
+  transform: rotate(-30deg);
+  background-color: #e569a0;
+  top: 60%;
+  left: 87%;
+  animation-delay: 1s;
+}
+
+.five {
+  transform: rotate(67deg);
+  background-color: #e569a0;
+  top: 88%;
+  left: 8%;
+  animation-delay: 1.5s;
+}
+
+.six {
+  transform: rotate(90deg);
+  background-color: #e569a0;
+  top: 67%;
+  left: 30%;
+  animation-delay: 1.5s;
+}
+
+.seven {
+  transform: rotate(-45deg);
+  background-color: #e569a0;
+  top: 30%;
+  left: 73%;
+  animation-delay: 1.25s;
+}
+
+.eight {
+  transform: rotate(20deg);
+  background-color: rgb(0, 179, 179);
+  top: 80%;
+  left: 50%;
+  animation-delay: 1s;
+}
+.nine {
+  transform: rotate(90deg);
+  background-color: #e569a0;
+  top: 85%;
+  left: 25%;
+  animation-delay: 1.5s;
+}
+
+.ten {
+  transform: rotate(-10deg);
+  background-color: #e569a0;
+  top: 12.5%;
+  left: 25%;
+  animation-delay: 1s;
+}
+
+.eleven {
+  transform: rotate(50deg);
+  background-color: #e569a0;
+  top: 30%;
+  left: 50px;
+  animation-delay: 1.25s;
+}
+
+.twelve {
+  transform: rotate(-20deg);
+  background-color: rgb(0, 179, 179);
+  top: 50%;
+  left: 4%;
+  animation-delay: 1s;
+}
+
+.thirteen {
+  transform: rotate(-120deg);
+  background-color: #e569a0;
+  top: 32%;
+  left: 200px;
+  animation-delay: 1.25s;
+}
+
+.fourteen {
+  transform: rotate(-45deg);
+  background-color: #e569a0;
+  top: 58%;
+  left: 15%;
+  animation-delay: 1s;
+}
+
+.fifteen {
+  transform: rotate(65deg);
+  background-color: rgb(0, 179, 179);
+  top: 10%;
+  left:90%;
+  animation-delay: 1.5s;
+}
+
+.sixteen {
+  transform: rotate(-75deg);
+  background-color: #e569a0;
+  top: 5%;
+  left: 75%;
+  animation-delay: 1.25s;
+}
+
+.seventeen {
+  transform: rotate(25deg);
+  background-color: rgb(0, 179, 179);
+  top: 15%;
+  left: 45%;
+  animation-delay: 1s;
+}
+
+.eighteen {
+  transform: rotate(145deg);
+  background-color: rgb(0, 179, 179);
+  top: 10%;
+  left: 10%;
+  animation-delay: 1.5s;
+}
+
+.nineteen {
+  transform: rotate(25deg);
+  background-color: rgb(0, 179, 179);
+  top: 75%;
+  left: 15%;
+  animation-delay: 1.25s;
+}
+@keyframes bounce-in-sprinkles {
+  0% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    height: 7.66667vh;
+    width: 2.875vh;
+  }
+  100% {
+    height: 6.66667vh;
+    width: 2.5vh;
+  }
+}
+/* end sprinkles---------------------------------- */
 /* medium screen size below */
 @media screen and (min-width: 700px) {
       .logo{
          width: 350px;
       }
-    }
+
       .truck{
           display: inline;
           width: 30%;
@@ -146,46 +385,4 @@ main{
 /* large screen styles below */
 @media screen and (min-width: 1300px) {
 
-    img{
-      display: none;
-      }
-
   }
-
-footer{
-    background-color: rgba(0, 179, 179, 0.6);
-    padding:20px;
-}
-
-footer a{
-    color: white;
-}
-
-footer p{
-    margin: 40px;
-    color: white;
-    font-family: "Baskerville", "Times New Roman", serif;
-    font-size: 0.9em;
-    text-align: center;
-}
-
-.logo {
-  /* ------ Max width to keep logo image from being larger than intended ------ */
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40%;
-      max-width: 300px;
-      padding-bottom: 8px;
-}
-
-
-
-
-
-
-/* img{ */
-    /* width: 100%; */
-    /* display: block; */
-    /* margin: 1% auto; */
-}

@@ -84,12 +84,22 @@ h3{
 
 h4{
     font-family: Helvetica, sans-serif;
+    text-decoration-style: bold;
 }
 
 p{
     font-family:Helvetica, sans-serif;
 }
 
+ul {
+  border: solid 4px #e569a0;
+  border-width: 30%;
+  border-radius: 20px;
+  padding-bottom: 5%;
+  /* padding: 5px 10px; */
+  padding-left: 10%;
+  background-color: inherit;
+}
 /* button{
     position: absolute;
     bottom:5%;

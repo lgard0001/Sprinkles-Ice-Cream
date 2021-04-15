@@ -5,6 +5,7 @@ body{
       padding: 0;
       margin: 0;
       font-family: Helvetica, sans-serif;
+      color: rgb(102, 45, 145);
 }
 .logo {
   /* ------ Max width to keep logo image from being larger than intended ------ */
@@ -15,11 +16,10 @@ body{
       max-width: 300px;
       padding-bottom: 8px;
 }
-nav{
-    background: rgb(0, 179, 179);
-    /* height: 60px; */
-    text-align: center;
-    font-family: "American Typewriter", "Times New Roman", serif;
+
+nav a:hover{
+    text-decoration: underline;
+    color: white;
 }
 
 nav a{
@@ -31,12 +31,176 @@ nav a{
       display: inline-block;
       text-decoration: none;
 }
-nav a:hover{
-    text-decoration: underline;
+
+nav{
+    background: rgb(0, 179, 179);
+    /* height: 60px; */
+    text-align: center;
+    font-family: "American Typewriter", "Times New Roman", serif;
+    font-size: 1.5em;
+    color: Cornsilk;
+    margin: 0;
+    padding: 0;
+    /* font-size: 1.5em; */
+  }
+{
+  margin: 0;
+  padding: 0;
+
+  /* make it look decent enough */
+  background: Cornsilk;
+  /* color: white; */
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: -50px;
+  left: 25px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: rgb(238, 106, 156);
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(102, 45, 145);
+  text-decoration: underline;
 }
 
 
+#menuToggle input
+{
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
 
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 200px;
+  margin: -100px 0 0 -50px;
+  padding: 25px;
+  padding-top: 25px;
+
+  background: Cornsilk;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 5px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+}
+
+
+/* start hamburger menu here------------------- */
+
+/* end hamburger styles here----------------- */
 
 /* Styles for hero or feature */
 .hero{
@@ -83,22 +247,25 @@ h3{
 }
 
 h4{
-    font-family: Helvetica, sans-serif;
+    font-family: "Baskerville", serif;
     text-decoration-style: bold;
 }
 
 p{
-    font-family:Helvetica, sans-serif;
+    font-family:"American Typewriter", serif;
+    /* font-size: .5em; */
 }
 
 ul {
   border: solid 4px #e569a0;
-  border-width: 30%;
+  border-width: 50%;
   border-radius: 20px;
   padding-bottom: 5%;
   /* padding: 5px 10px; */
-  padding-left: 10%;
+  padding-left: 20%;
   background-color: inherit;
+  font-family: "American Typewriter", serif;
+  /* text-align:center; */
 }
 /* button{
     position: absolute;
@@ -155,8 +322,22 @@ footer p{
     text-align: center;
 }
 
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 
+/* .button {
+  transition-duration: 0.4s;
+}
 
+.button:hover {
+  background-color: rgb(0, 179, 179);
+} */
 /* start sprinkles---------------------------------- */
 .wrapper {
   background: url(img/Sprinkles_Logo_big.png) no-repeat Cornsilk;
@@ -248,7 +429,7 @@ button:active {
 .seven {
   transform: rotate(-45deg);
   background-color: #e569a0;
-  top: 30%;
+  top: 40%;
   left: 73%;
   animation-delay: 1.25s;
 }
@@ -279,15 +460,15 @@ button:active {
 .eleven {
   transform: rotate(50deg);
   background-color: #e569a0;
-  top: 30%;
-  left: 50px;
+  top: 20%;
+  left: 40%;
   animation-delay: 1.25s;
 }
 
 .twelve {
   transform: rotate(-20deg);
   background-color: rgb(0, 179, 179);
-  top: 50%;
+  top: 60%;
   left: 4%;
   animation-delay: 1s;
 }
@@ -336,7 +517,7 @@ button:active {
   transform: rotate(145deg);
   background-color: rgb(0, 179, 179);
   top: 10%;
-  left: 10%;
+  left: 40%;
   animation-delay: 1.5s;
 }
 
@@ -346,6 +527,38 @@ button:active {
   top: 75%;
   left: 15%;
   animation-delay: 1.25s;
+}
+
+.twenty {
+  transform: rotate(45deg);
+  background-color: rgb(0, 179, 179);
+  top: 20%;
+  left: 85%;
+  animation-delay: 1.5s;
+}
+
+.twentyone {
+  transform: rotate(160deg);
+  background-color: #e569a0;
+  top: 70%;
+  left: 85%;
+  animation-delay: 1s;
+}
+
+.twentytwo {
+  transform: rotate(-85deg);
+  background-color: rgb(0, 179, 179);
+  top: 80%;
+  left: 70%;
+  animation-delay: 1.25s;
+}
+
+.twentythree {
+  transform: rotate(95deg);
+  background-color: rgb(0, 179, 179);
+  top:10%;
+  left: 58%;
+  animation-delay: 1.5s;
 }
 @keyframes bounce-in-sprinkles {
   0% {
@@ -366,6 +579,23 @@ button:active {
   }
 }
 /* end sprinkles---------------------------------- */
+/* styles for small screens */
+
+@media screen and (min-width: 400px) {
+    .logo{
+        width: 350px;
+  }
+
+
+    .truck{
+        display: inline;
+        width: 150px;
+        position: relative;
+        padding-left: 35%;
+  }
+
+}
+
 /* medium screen size below */
 @media screen and (min-width: 700px) {
       .logo{
@@ -374,7 +604,7 @@ button:active {
 
       .truck{
           display: inline;
-          width: 30%;
+          width: 150px;
           position: relative;
           padding-left: 35%;
       }

@@ -11,7 +11,7 @@
 
     </head>
     <body>
-      <!-- <a href="index.html"><img class="logo" src="img/Sprinkles_Logo.png" alt="logo"></a> -->
+      <a href="index.html"><img class="logo" src="img/Sprinkles_Logo_big.png" alt="logo"></a>
       <!-- Logo -->
 <!-- Photo by Conor Brown on Unsplash possibly Hero -->
 <!-- https://unsplash.com/@abigailkate14?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText -->
@@ -20,7 +20,7 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="about.html">Contact Us</a>
       </nav>
 <!-- Hamburger Menu -->
 
@@ -48,9 +48,9 @@ but hey, it's pure CSS magic.
 -->
       <ul id="menu">
         <a href="index.html"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
+        <a href="about.html"><li>About</li></a>
         <a href="services.html"><li>Services</li></a>
-        <a href="contact.html"><li>Contact</li></a>
+        <a href="#"><li>Contact</li></a>
         </ul>
       </div>
     </nav>
@@ -58,9 +58,9 @@ but hey, it's pure CSS magic.
 <!-- end hamburger code---------------------------->
 
       <!-- Based on: https://codepen.io/HyeyoonRho/pen/pVxbNJ -->
-      <div class="wrapper">
-      <button id="sprinkle"><img src="img/ICT_3.png"></button>
-      <div class="sprinkle one"></div>
+      <!-- <div class="wrapper">
+       <button id="sprinkle"><img src="img/ICT_3.png"></button> -->
+      <!-- <div class="sprinkle one"></div>
       <div class="sprinkle two"></div>
       <div class="sprinkle three"></div>
       <div class="sprinkle four"></div>
@@ -83,11 +83,11 @@ but hey, it's pure CSS magic.
       <div class="sprinkle twentyone"></div>
       <div class="sprinkle twentytwo"></div>
       <div class="sprinkle twentythree"></div>
-      </div>
+      </div> -->
       <!--sprinkle wrapper-->
 
 
-      <!-- <div class="hero"> -->
+       <div class="services-hero">
         <!-- https://unsplash.com/s/photos/ice-cream?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText -->
 
           <!-- <h2>Flavor of the Month!</br>Blueberry Cotton Candy</br></h2> -->
@@ -97,29 +97,64 @@ but hey, it's pure CSS magic.
 
       <main>
 
+
     </div>
 
-          <div class="flexItem">
+          <!-- <div class="flexItem">
               <h3>Our Mission</h3>
               <p>Crafted with creativity and a love of real, local ingredients, our ice creams, waffle cones, and heck, even the sprinkles are made in our own kitchen.</p><p> We put time, passion, and pure ingredients into our sweet delights, and the results are worth it! What we don’t make ourselves we bring in from the best shops sharing our passion for quality ingredients.</p>
 
-          </div>
+          </div> -->
 
-          <div class="flexItem">
+          <!-- <div class="flexItem">
               <h3>Flavors on Scoop</h3>
               <p>With a focus on fresh and local, our flavors change with the season an availability. We have some classics that are always on the menu, but you'll have to stop into the shop to find out what's on scoop for the day!</p>
-          </div>
+          </div> -->
 
           <div class="flexItem">
             <h3>Rent A Truck!</h3>
               <p>We know we can make your next event extra special with our Private Ice Cream Truck services and catering!</p>
-              <p>We make weddings, birthday parties and special events even more memorable by providing ice cream on the spot! All flavors and toppings provided along with our friendly staff to bring your event to the next level. Visit our service page to request yours today! </p>
+              <p>We make weddings, birthday parties and special events even more memorable by providing ice cream on the spot! All flavors and toppings provided along with our friendly staff to bring your event to the next level. Fill out the form below with contact information and we will be in touch with you shortly! Also, you can subscribe to our monthly newsletter.</p>
               <div><img class="truck" src="img/ICT_3.png" alt="ice cream truck image"></div>
               <p>Truck Illustration by Conor Brown</p>
             </div>
 
+            <div class="flexItem">
+            <!-- START OF FORM -->
+            <h2>Contact Us</h2>
+            <div class="form-container">
+              <form action="#">
+    <!--     FORM ACTION will go to a FAKE Thank You page if you want to create one, OR remove it so hitting the submit button doesn't break the page -->
+              <p> Message us with any questions, tell us about your favorite ice cream flavor, or let us know if you want to host an event. A truck sprinklist will get back to you ASAP, so leave your contact information.<br>
+                We love getting feedback and learning how we can better share our Sprinkles' message.</p>
+                <br>
+                <label>Your First & Last Name: <br>
+                  <input type="text" id="name" name="name" required></label>
 
-          <div class="flexItem">
+                  <label>Your Email: <br>
+                    <input type="email" id="email" name="email" required></label>
+
+                    <label>Phone Number: <br> <input type="phone number" id="phone number" required></label>
+
+                    <label>What kind of event are you hosting? <br> <input type="radio" name="event" value="wedding" checked="checked" /> Wedding
+                      <input type="radio" name="event" value="birthday" /> Birthday
+                      <input type="radio" name="event" value="catering" /> Catering
+                      <input type="radio" name="event" value="other" /> Other
+                      <p>
+
+                    <label>Message: <br>
+                      <textarea id="message" required></textarea></label>
+
+                      <label id="newsletter"> <input type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters</label>
+
+                      <button type="submit" class="cursor" value="Submit">Submit</button>
+
+                    </form>
+                  </div> <!-- END OF CONTAINER DIV -->
+    <!-- END OF FORM -->
+    <!-- More information on forms see chapter 7 in our HTML AND CSS book -->
+
+          <!-- <div class="flexItem">
             <h3>Menu</h3>
             <div class="list">
             <ul>
@@ -141,13 +176,14 @@ but hey, it's pure CSS magic.
               <li>Chocolate Cookie Dough</li>
               <li>Chocolate Dipped Strawberry</li>
             </ul>
-          </div>
+          </div> -->
           </div>
 
         </main>
         <footer>
 
-          <p> &copy; 2021 Sprinkles' Ice Cream Parlor | <a href="#">Back to top</a>
+          <p> &copy; 2021 Sprinkles' Ice Cream Parlor | <a href="#">Back to top</a><br />
+            <br />
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-instagram"></a>

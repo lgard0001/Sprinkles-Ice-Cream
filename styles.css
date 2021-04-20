@@ -239,10 +239,16 @@ nav{
     /* width: 20%; */
     /* background-color: Cornsilk; */
 
+h2 {
+  font-family: "Baskerville", "Times New Roman", serif;
+  color: #663399;
+  text-align: center;
+}
 
 h3{
     font-family: "Baskerville", "Times New Roman", serif;
     color: rgb(0, 179, 179);
+    text-align: center;
     padding: 5px;
     text-decoration: none ;
     font-size: 1.5em;
@@ -256,6 +262,7 @@ h4{
 p{
     font-family:"American Typewriter", serif;
     /* font-size: .5em; */
+    /* text-align: center; */
 }
 
 ul {
@@ -289,7 +296,7 @@ ul {
     background-position: center;
     /* Styles for text and button */
     position: relative;
-    margin: 0%;
+    margin: auto;
     /* top: 40%; */
 }
 
@@ -302,8 +309,12 @@ ul {
     /* left: 2%; */
 }
 /* END STYLES FOR ABOUT HERO */
+/* .parlor { */
+  /* width: 100%; */
+  /* position: relative; */
+}
 main{
-    margin: 20px auto;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: row; */
@@ -645,7 +656,7 @@ footer p{
 
 @media screen and (min-width: 400px) {
     .logo{
-        width: 350px;
+        width: 250px;
   }
 
 

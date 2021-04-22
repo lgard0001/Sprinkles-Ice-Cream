@@ -223,12 +223,13 @@ nav{
 }
 
 .flexItem{
-        flex-basis: 300px;
+        flex-basis: 400px;
         flex-grow: 1;
         /* margin: 2px 40px; */
-        margin: 1% 10px;
+        margin-left: auto;
+        margin-right: auto;
         background: rgba(255, 255, 255, 0.3);
-        padding: 30px;
+        padding: 20px;
 }
 
 .hero h2{
@@ -296,10 +297,29 @@ ul {
   padding-top: 5%;
   padding-bottom: 5%;
   /* padding: 5px 10px; */
-  padding-left: 20%;
+  /* padding-left: 20%; */
   background-color: inherit;
   font-family: "American Typewriter", serif;
   /* text-align:center; */
+}
+
+li {
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.wrapper-container {
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+
+.list {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
 }
 /* button{
     position: absolute;
@@ -492,8 +512,8 @@ footer p{
 .ten {
   transform: rotate(-10deg);
   background-color: #e569a0;
-  top: 12.5%;
-  left: 25%;
+  top: 45%;
+  left: 15%;
   animation-delay: 1s;
 }
 
@@ -501,7 +521,7 @@ footer p{
   transform: rotate(50deg);
   background-color: #e569a0;
   top: 20%;
-  left: 40%;
+  left: 35%;
   animation-delay: 1.25s;
 }
 
@@ -629,6 +649,8 @@ footer p{
       margin-right:auto;
       margin-left:auto;
       display: block;
+      border: #e569a0 solid;
+      border-width: 8px;
 
 }
     .form-container{
@@ -721,8 +743,9 @@ footer p{
     }
 
   .hours{
-    width: 50%;
-    padding-left:100px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
@@ -769,14 +792,23 @@ footer p{
       .flexItem{
               /* flex-basis: 300px; */
               /* flex-grow: 1; */
-              margin: 20px;
+              margin: 2px;
               /* background: rgba(255, 255, 255, 0.3); */
               /* padding-top: 1300px; */
       }
 
+      .wrapper-container {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
       .hours{
         width:40%;
-        padding-left: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
       /* .flexItem:first-child{ */
         /* margin-right: 0; */
@@ -812,12 +844,21 @@ footer p{
         }
 
       .hours{
-        width: 40%;
-        padding-left: 30%;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
 
       .map{
         display: block;
         width: 50%;
+      }
+
+      .wrapper-container {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
   }

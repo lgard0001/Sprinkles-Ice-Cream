@@ -718,7 +718,7 @@ footer p{
 
 
     .truck {
-        display: inline;
+        display: block;
         width: 150px;
         position: relative;
         padding-left: 35%;
@@ -780,7 +780,7 @@ footer p{
           display: inline;
           width: 150px;
           position: relative;
-          padding-left: 40%;
+          padding-left: 43%;
       }
 
       .service-two img{
@@ -828,6 +828,14 @@ footer p{
               text-decoration: none;
         }
 
+        .form-container {
+          width: 50%;
+        }
+
+          input {
+            width:50%;
+          }
+
 }
 
 /* large screen styles below */
@@ -847,7 +855,7 @@ footer p{
       }
 
       .form-container{
-        width: 40%;
+        width: 50%;
       }
         input{
           width: 60%;

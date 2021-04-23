@@ -334,11 +334,11 @@ li {
 } */
 /* STYLES FOR ABOUT HERO */
 .services-hero{
-    background-image: url("img/Sprinkles_ICT_Photo.jpg");
+    background-image: url("img/Sprinkles_ICT_PS.jpg");
     /* ADD IMAGE NAME ABOVE */
     height: 600px;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     /* Styles for text and button */
     position: relative;
     margin: auto;

@@ -362,6 +362,8 @@ main{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
     /* flex-direction: row; */
 }
 
@@ -707,13 +709,31 @@ footer p{
       padding:10px 20px;
       font-size: 1.1em;
     }
+
+    form button{
+      background: #e569a0;
+      border: 2px solid rgb(0, 179, 179);
+      border-radius: 4px;
+      /* Text color */
+      color:white;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
   /*        END MOBILE FORM STYLES */
 
 /* styles for small screens--------------- */
 
 @media screen and (min-width: 400px) {
+
+  main{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
     .logo{
         width: 250px;
+        padding-bottom: 10px;
+        padding-top: 10px;
   }
 
 
@@ -772,8 +792,16 @@ footer p{
 
 /* medium screen size below */
 @media screen and (min-width: 700px) {
+
+  main{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
       .logo{
          width: 350px;
+         padding-top: 10px;
+         padding-bottom: 10px;
       }
 
       .truck{
@@ -792,7 +820,7 @@ footer p{
       .flexItem{
               /* flex-basis: 300px; */
               /* flex-grow: 1; */
-              margin: 2px;
+              margin: 2%;
               /* background: rgba(255, 255, 255, 0.3); */
               /* padding-top: 1300px; */
       }
@@ -840,6 +868,17 @@ footer p{
 
 /* large screen styles below */
 @media screen and (min-width: 1300px) {
+
+      main{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .logo{
+        width: 350px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
 
       .service-two img {
           display: block;

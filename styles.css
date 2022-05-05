@@ -246,6 +246,8 @@ nav{
   display: inline;
   position:relative;
   margin: auto;
+  border: #e569a0 solid;
+  border-width: 8px;
 }
 
 .hours ul {
